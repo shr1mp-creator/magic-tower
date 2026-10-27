@@ -1,6 +1,6 @@
 extends Button
 
-const NEXT_SCENE_PATH = "res://scene-2.tscn"
+const NEXT_SCENE_PATH = "res://scenes/scene-2.tscn"
 
 func _ready():
 	pressed.connect(play)
