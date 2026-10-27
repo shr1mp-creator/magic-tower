@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://4lrgjdna0ko8"]
+
+[ext_resource type="Script" uid="uid://deskem1qeewhp" path="res://scripts/pause.gd" id="1_45vjg"]
+
+[node name="Control" type="Control" unique_id=1504883088]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_45vjg")
+
+[node name="Button" type="Button" parent="." unique_id=1967013696]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 49.0
+offset_right = 835.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 50
+text = "Continue"
+
+[node name="Button" type="Button" parent="Button" unique_id=592614400]
+layout_mode = 0
+offset_top = 205.0
+offset_right = 550.0
+offset_bottom = 356.0
+theme_override_font_sizes/font_size = 50
+text = "Settings"
+
+[node name="Button" type="Button" parent="Button/Button" unique_id=470474719]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 203.0
+offset_right = 551.0
+offset_bottom = 354.0
+theme_override_font_sizes/font_size = 50
+text = "Quit to menu"

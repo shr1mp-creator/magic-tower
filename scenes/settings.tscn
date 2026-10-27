@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cf6oyb6v77pwg"]
+
+[ext_resource type="Script" uid="uid://d1oprhyf6ye42" path="res://scripts/master-volume.gd" id="1_x2hje"]
+[ext_resource type="Script" uid="uid://e81g7kxd7bfm" path="res://scripts/music-volume.gd" id="2_3ykye"]
+[ext_resource type="Script" uid="uid://c7x4jqbcwxeuw" path="res://scripts/sfx-volume.gd" id="3_gc0em"]
+
+[node name="Control" type="Control" unique_id=304300750]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSlider" type="HSlider" parent="." unique_id=1226829589]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 56.0
+offset_right = 847.0
+offset_bottom = 144.0
+script = ExtResource("1_x2hje")
+
+[node name="Label" type="Label" parent="HSlider" unique_id=405451964]
+layout_mode = 0
+offset_left = -222.0
+offset_top = 3.0
+offset_right = 116.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 25
+text = "Master volume"
+vertical_alignment = 1
+
+[node name="HSlider2" type="HSlider" parent="." unique_id=743158184]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 188.0
+offset_right = 847.0
+offset_bottom = 276.0
+script = ExtResource("2_3ykye")
+
+[node name="Label" type="Label" parent="HSlider2" unique_id=1986772657]
+layout_mode = 0
+offset_left = -222.0
+offset_top = 3.0
+offset_right = 116.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 25
+text = "Music volume"
+vertical_alignment = 1
+
+[node name="HSlider3" type="HSlider" parent="." unique_id=1127072148]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 322.0
+offset_right = 847.0
+offset_bottom = 410.0
+script = ExtResource("3_gc0em")
+
+[node name="Label" type="Label" parent="HSlider3" unique_id=888998654]
+layout_mode = 0
+offset_left = -222.0
+offset_top = 3.0
+offset_right = 116.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 25
+text = "SFX volume"
+vertical_alignment = 1

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://d1pcap2jpq5l7"]
+
+[node name="Node2D" type="Node2D" unique_id=980265660]
+
+[node name="Label" type="Label" parent="." unique_id=2061804628]
+offset_left = 236.0
+offset_top = 134.0
+offset_right = 815.0
+offset_bottom = 386.0
+theme_override_font_sizes/font_size = 100
+text = "Uluk gay"
+horizontal_alignment = 1
+vertical_alignment = 1
