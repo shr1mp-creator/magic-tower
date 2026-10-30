@@ -1,6 +1,27 @@
 [gd_scene format=3 uid="uid://d1pcap2jpq5l7"]
 
+[ext_resource type="Script" uid="uid://bq2com2xqphko" path="res://global.gd" id="1_8dn0l"]
+[ext_resource type="Script" uid="uid://bxwaxjil78kap" path="res://scenes/line_edit.gd" id="1_iexao"]
+[ext_resource type="PackedScene" uid="uid://b2v64cmn563rm" path="res://character_body_2d.tscn" id="1_pdh3t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i34pm"]
+size = Vector2(27, 645.00006)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7udpf"]
+size = Vector2(1183.5139, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mq0c5"]
+size = Vector2(30, 651)
+
 [node name="Node2D" type="Node2D" unique_id=980265660]
+script = ExtResource("1_8dn0l")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1723506912]
+offset_top = 552.0
+offset_right = 1135.0
+offset_bottom = 644.0
+theme_override_font_sizes/font_size = 32
+script = ExtResource("1_iexao")
 
 [node name="Label" type="Label" parent="." unique_id=2061804628]
 offset_left = 236.0
@@ -8,6 +29,28 @@ offset_top = 134.0
 offset_right = 815.0
 offset_bottom = 386.0
 theme_override_font_sizes/font_size = 100
-text = "Uluk gay"
+text = "Amir say \"meow\""
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="CharacterBody2D" parent="." unique_id=1020113356 instance=ExtResource("1_pdh3t")]
+position = Vector2(194.99998, 274.99997)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1475314365]
+position = Vector2(-10.513916, -4.9904175)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1619182030]
+position = Vector2(-2.986084, 329.49045)
+shape = SubResource("RectangleShape2D_i34pm")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=2082887350]
+position = Vector2(578.5139, -4.0095825)
+shape = SubResource("RectangleShape2D_7udpf")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=402220874]
+position = Vector2(1162.5139, 325.49042)
+shape = SubResource("RectangleShape2D_mq0c5")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1755962322]
+position = Vector2(572.5139, 564.9904)
+shape = SubResource("RectangleShape2D_7udpf")

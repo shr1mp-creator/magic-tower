@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://d1oprhyf6ye42" path="res://scripts/master-volume.gd" id="1_x2hje"]
 [ext_resource type="Script" uid="uid://e81g7kxd7bfm" path="res://scripts/music-volume.gd" id="2_3ykye"]
 [ext_resource type="Script" uid="uid://c7x4jqbcwxeuw" path="res://scripts/sfx-volume.gd" id="3_gc0em"]
-[ext_resource type="Script" uid="uid://u1c3tkg120yp" path="res://scenes/settings-back.gd" id="4_f4mfi"]
+[ext_resource type="Script" uid="uid://u1c3tkg120yp" path="res://scripts/settings-back.gd" id="4_f4mfi"]
 
 [node name="Control" type="Control" unique_id=304300750]
 layout_mode = 3
@@ -76,3 +76,5 @@ offset_bottom = 579.0
 theme_override_font_sizes/font_size = 50
 text = "Back"
 script = ExtResource("4_f4mfi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=922827050]
