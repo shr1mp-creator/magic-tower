@@ -1,8 +1,18 @@
 [gd_scene format=3 uid="uid://biby6g6v2tj6m"]
 
 [ext_resource type="Script" uid="uid://cpebl31jhija3" path="res://scripts/play-button.gd" id="1_62e2m"]
+[ext_resource type="Texture2D" uid="uid://b76jyko8fhycn" path="res://img/playbt.png" id="1_lt2xq"]
 [ext_resource type="Script" uid="uid://brjuaj7gtf4o7" path="res://scripts/йгше-игеещт.gd" id="2_qtu10"]
+[ext_resource type="Texture2D" uid="uid://c4nkvsj41a1na" path="res://img/quit.png" id="3_1p5nq"]
 [ext_resource type="Script" uid="uid://cfcrwwclfsyu2" path="res://scripts/setting-button.gd" id="3_qtu10"]
+[ext_resource type="Texture2D" uid="uid://ddgsd5d1lal58" path="res://img/settbt.png" id="5_hob4j"]
+[ext_resource type="Texture2D" uid="uid://cau1hh78c5yox" path="res://img/bgimg.jpeg" id="7_lt2xq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i34pm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mq0c5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7udpf"]
 
 [node name="Control" type="Control" unique_id=1579819706]
 layout_mode = 3
@@ -17,31 +27,49 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Button" type="Button" parent="." unique_id=1110918147]
+top_level = true
 layout_mode = 0
-offset_left = 375.0
-offset_top = 60.0
-offset_right = 740.0
-offset_bottom = 192.0
+offset_left = 47.0
+offset_top = 91.0
+offset_right = 570.0
+offset_bottom = 256.0
 theme_override_font_sizes/font_size = 50
-text = "Play"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i34pm")
+icon = ExtResource("1_lt2xq")
 script = ExtResource("1_62e2m")
 
 [node name="Button2" type="Button" parent="." unique_id=1620975348]
+top_level = true
 layout_mode = 0
-offset_left = 380.0
-offset_top = 445.0
-offset_right = 738.0
-offset_bottom = 570.0
+offset_left = 43.0
+offset_top = 448.0
+offset_right = 556.0
+offset_bottom = 622.0
 theme_override_font_sizes/font_size = 50
-text = "Quit"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mq0c5")
+icon = ExtResource("3_1p5nq")
 script = ExtResource("2_qtu10")
 
 [node name="Button3" type="Button" parent="." unique_id=854461577]
+top_level = true
 layout_mode = 0
-offset_left = 380.0
-offset_top = 263.0
-offset_right = 743.0
-offset_bottom = 389.0
+offset_left = 38.0
+offset_top = 270.0
+offset_right = 560.0
+offset_bottom = 437.0
 theme_override_font_sizes/font_size = 50
-text = "Settings"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7udpf")
+icon = ExtResource("5_hob4j")
 script = ExtResource("3_qtu10")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=88486698]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(50, 0)
+repeat_times = 6
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=280987520]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(374.948, 321)
+scale = Vector2(1.027199, 1.1654412)
+texture = ExtResource("7_lt2xq")
